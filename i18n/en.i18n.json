@@ -1,0 +1,23 @@
+{
+  "chinese": "简体中文",
+  "layout": {
+    "title": "DBA System",
+    "home": "Home",
+    "register": "Register",
+    "login": "Login"
+  },
+  "home": {
+    "select_language": "Select another language"
+  },
+  "events": {
+    "location": "Veranstaltungsort"
+  },
+  "pages": {
+    "general": "Allgemein",
+    "company": "Betrieb",
+    "address": "Adresse"
+  },
+  "shared": {
+    "contact": "Kontakt"
+  }
+}

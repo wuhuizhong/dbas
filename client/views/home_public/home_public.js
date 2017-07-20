@@ -45,3 +45,13 @@ Template.HomePublicHomeJumbotron.events({
 Template.HomePublicHomeJumbotron.helpers({
 	
 });
+
+Template.languageSelector.events({
+  'click a'(event, instance) {
+    event.preventDefault();
+    // get lang key
+    locale = $(event.currentTarget).data('lang');
+    TAPi18n.setLanguage(locale);
+    i18n.setLanguage(locale);
+  },
+});

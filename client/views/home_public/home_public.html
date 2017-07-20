@@ -7,6 +7,7 @@
 			</div>
 		</div>
 		{{> HomePublicHomeJumbotron}}
+		{{> languageSelector}}
 	</div>
 </template>
 
@@ -14,7 +15,7 @@
 	<div class="jumbotron ">
 		<div id="content" class="container">
 			<h1 id="component-title">
-				Example application
+				{{_ 'layout.title'}}
 			</h1>
 			<p id="jumbotron-text">
 				<b>This <a href="https://www.meteor.com" target="_blank">Meteor</a> application is made with <a href="http://www.meteorkitchen.com" target="_blank">meteor-kitchen</a> without manual coding.</b><br />It shows how to work with DataViews, Forms with dates and lookup fields, master-detail relations etc.<br />Source code (input file for generator) is <a href="https://github.com/perak/kitchen-examples/tree/master/example-invoices" target="_blank">here</a>.
@@ -28,3 +29,7 @@
 	</div>
 </template>
 
+<template name="languageSelector">
+  <h4>{{_ 'home.select_language'}}</h4><br>
+  <a href="" class="btn" data-lang="zh-CN">{{_ 'chinese'}}</a> | <a href="" class="btn" data-lang="en">EN</a>
+</template>
