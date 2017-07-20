@@ -52,6 +52,5 @@ Template.languageSelector.events({
     // get lang key
     locale = $(event.currentTarget).data('lang');
     TAPi18n.setLanguage(locale);
-    i18n.setLanguage(locale);
   },
 });
